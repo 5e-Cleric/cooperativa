@@ -1,0 +1,136 @@
+:root {
+    --main-clr: white;
+    --secondary-clr: rgb(37, 130, 37);
+    --text-clr: black;
+    --secondary-text-clr: white;
+
+}
+
+body {
+    background-color: var(--main-clr);
+    background-size: 20%;
+    font-size: 14pt;
+    position: relative;
+}
+
+body:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url(https://cdn.pixabay.com/photo/2021/09/16/08/56/leaves-6629581_1280.png);
+    background-size: 20%;
+    z-index: -1;
+    opacity: .3;
+}
+
+header {
+    height: 10vh;
+    width: 100%;
+    position: static;
+    top: 0;
+    color: var(--text-clr);
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: block;
+    margin: 10px;
+    margin-left: 20px;
+    width: max-content;
+    height: max-content;
+}
+
+header nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 50%;
+    height: 100%;
+    place-items: center;
+}
+
+header a {
+    font-size: 20pt;
+    font-weight: 900;
+    color: inherit;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: unset;
+}
+
+main {
+    color: var(--text-clr);
+    min-height: 80vh;
+    width: 60%;
+    margin-inline: auto;
+    box-shadow: 0 0 20px 20px #ffffff99;
+    background: #ffffff99;
+    padding-top: 1cm;
+}
+
+main section {
+    height: max-content;
+    margin-block: 1cm;
+    padding: .5cm 1cm;
+}
+
+h1 {
+    text-align: center;
+    font-size: 29pt;
+    margin: 1cm;
+    font-weight: 900;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h2 {
+    font-size: 17pt;
+    margin-bottom: .5cm;
+    font-family: fira sans;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+footer {
+
+    height: 10vh;
+    width: 100%;
+    background-color: var(--secondary-clr);
+    color: var(--secondary-text-clr);
+    padding: 20px 50px;
+}
+
+b {
+    font-weight: 900;
+}
+
+ul {
+    list-style-type: circle;
+    text-indent: 1ch;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+
+/* ########################   TABLES   ############################ */
+
+table {
+    width: 100%;
+}
+
+table td {
+    text-align: center;
+    padding: 0.2em;
+    font-size: 16pt;
+}
+
+table tbody tr:nth-child(even) {
+    background: rgb(183, 244, 183);
+}
+
+table th {
+    font-weight: 900;
+    padding-bottom: .5em;
+    font-size: 18pt;
+}
